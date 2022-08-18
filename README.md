@@ -4,7 +4,7 @@
 - Use the example.env as a sample env and fill the 
 - npm run start 
 
-# Curls you can import and use to test the routes
+# Curl requests you can import and use to test the routes
 - Add a movie
 ```sh
 curl --location --request POST 'http://localhost:2000/api/addMovie' \
