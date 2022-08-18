@@ -61,13 +61,13 @@ const getMovieDetails = async (req, res) => {
     if (req.movie) {
       return res.status(200).json(req.movie);
     } else {
-      console.log("Movie fetching issue ", err);
+      console.log("Movie fetching issue ");
       return res.status(404).json({
         message: "Something went wrong",
       });
     }
   } catch (e) {
-    console.log("Movie fetching issue ", err);
+    console.log("Movie fetching issue ", e);
     return res.status(404).json({
       message: "Something went wrong",
     });
